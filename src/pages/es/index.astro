@@ -1,0 +1,19 @@
+---
+import BaseEs from "../../layouts/BaseEs.astro";
+import { Header } from "../../components/Header.tsx";
+import { Hero } from "../../components/Hero.tsx";
+import { About } from "../../components/About.tsx";
+import { Contact } from "../../components/Contact.tsx";
+import { Footer } from "../../components/Footer.tsx";
+---
+
+<BaseEs>
+  <script>
+    import '../../scripts/init-i18n.ts';
+  </script>
+  <Header client:only="react" />
+  <Hero client:only="react" />
+  <About client:only="react" />
+  <Contact client:only="react" />
+  <Footer client:only="react" />
+</BaseEs>

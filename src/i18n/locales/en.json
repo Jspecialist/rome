@@ -1,0 +1,138 @@
+{
+  "header": {
+    "logo": "Elite Legal Partners",
+    "nav": {
+      "services": "Services",
+      "about": "About",
+      "attorneys": "Attorneys", 
+      "contact": "Contact"
+    },
+    "phone": "(555) 123-4567",
+    "cta": "Free Consultation"
+  },
+  "hero": {
+    "trust_banner": "Trusted by 10,000+ clients nationwide",
+    "headline": "Legal solutions trusted by businesses,",
+    "headline_accent": "designed for you",
+    "subheadline": "Expert legal guidance and comprehensive solutions for your business and personal needs. Get started with a free consultation today.",
+    "cta_business": "Business formation",
+    "cta_citizenship": "Citizenship / Visa",
+    "stats": {
+      "years": "+40 years",
+      "years_desc": "trusted since 1984",
+      "clients": "10,000+",
+      "clients_desc": "Satisfied Clients",
+      "success": "98%",
+      "success_desc": "Success Rate"
+    }
+  },
+  "about": {
+    "title": "Trusted Legal Excellence Since 1984",
+    "description": "For over four decades, Elite Legal Partners has been the premier legal advisor to multinational corporations, international investors, and individuals from over 70 nationalities doing business in Panama. Our expertise in cross-border transactions and local compliance has made us the go-to firm in Central America.",
+    "achievements": {
+      "years": "40+",
+      "years_label": "Years Experience",
+      "clients": "10,000+",
+      "clients_label": "Clients Served",
+      "success": "98%",
+      "success_label": "Success Rate",
+      "nationalities": "70+",
+      "nationalities_label": "Nationalities Served"
+    },
+    "credentials_title": "Achievements & Recognition in Panama",
+    "credentials": [
+      "Multinational Corporate Legal Advisor",
+      "Authorized Panama Bar Association Member", 
+      "International Trade & Investment Specialist",
+      "Banking & Finance Law Expert",
+      "Trusted by Fortune 500 Companies in Panama",
+      "Cross-Border Transaction Specialist"
+    ],
+    "floating_card": "$50M+",
+    "floating_card_desc": "In Client Settlements & Victories",
+    "quote": "We don't just provide legal services – we build lasting partnerships with our clients, understanding their unique needs and delivering solutions that drive real results.",
+    "quote_author": "— Managing Partner, Elite Legal Partners"
+  },
+  "contact": {
+    "title": "Get Your Free Legal Consultation",
+    "description": "Ready to discuss your legal needs? Contact us today for a free, confidential consultation with one of our experienced attorneys.",
+    "form_title": "Schedule Your Consultation",
+    "form": {
+      "first_name": "First Name *",
+      "first_name_placeholder": "Enter your first name",
+      "last_name": "Last Name *", 
+      "last_name_placeholder": "Enter your last name",
+      "email": "Email Address *",
+      "email_placeholder": "Enter your email",
+      "phone": "Phone Number *",
+      "phone_placeholder": "Enter your phone number",
+      "legal_matter": "Legal Matter Type",
+      "legal_matter_placeholder": "e.g., Business Formation, Estate Planning, etc.",
+      "message": "Tell Us About Your Legal Needs *",
+      "message_placeholder": "Please describe your legal situation and how we can help...",
+      "submit": "Schedule Free Consultation",
+      "required_note": "* Required fields. All consultations are confidential."
+    },
+    "info_title": "Contact Information",
+    "info_description": "Prefer to speak directly? We're here to help through multiple channels.",
+    "contact_methods": {
+      "phone": "Phone",
+      "phone_desc": "Call us for immediate assistance",
+      "email": "Email",
+      "email_desc": "Send us your legal questions", 
+      "address": "Address",
+      "address_details": "123 Legal Plaza, Suite 500\nDowntown District, ST 12345",
+      "address_desc": "Visit our main office",
+      "hours": "Hours",
+      "hours_details": "Mon - Fri: 8:00 AM - 6:00 PM\nSat: 9:00 AM - 2:00 PM",
+      "hours_desc": "We're here when you need us"
+    },
+    "emergency": {
+      "title": "24/7 Emergency Legal Line",
+      "description": "For urgent legal matters requiring immediate attention",
+      "cta": "Call Emergency Line: (555) 999-0000"
+    }
+  },
+  "footer": {
+    "company_name": "Elite Legal Partners",
+    "description": "Providing exceptional legal services with integrity, expertise, and dedication to achieving the best outcomes for our clients since 1998.",
+    "legal_services": "Legal Services",
+    "services": [
+      "Business Formation",
+      "Corporate Law",
+      "Intellectual Property",
+      "Civil Litigation", 
+      "Estate Planning",
+      "Employment Law"
+    ],
+    "resources": "Resources",
+    "resource_items": [
+      "Legal Blog",
+      "Case Studies",
+      "Legal Forms",
+      "FAQ",
+      "Client Portal",
+      "Attorney Profiles"
+    ],
+    "about": "About",
+    "about_items": [
+      "Our Firm",
+      "Our Attorneys", 
+      "Careers",
+      "Community Involvement",
+      "Awards & Recognition",
+      "Client Testimonials"
+    ],
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Schedule your free consultation today and let us help you navigate your legal challenges.",
+      "button": "Schedule Free Consultation Now"
+    },
+    "copyright": "© 2025 Elite Legal Partners. All rights reserved.",
+    "legal_links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service", 
+      "advertising": "Attorney Advertising"
+    }
+  }
+}
