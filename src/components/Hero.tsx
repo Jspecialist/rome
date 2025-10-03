@@ -5,6 +5,14 @@ import { Button } from "@/components/ui/button";
 export function Hero() {
   const { t } = useTranslation();
   
+  const getLocalizedHref = (path: string) => {
+    if (typeof window === 'undefined') return path;
+    const p = window.location.pathname;
+    if (p.startsWith('/es')) return `/es${path === '/' ? '' : path}`;
+    if (p.startsWith('/it')) return `/it${path === '/' ? '' : path}`;
+    return path;
+  };
+  
   return (
     <section className="relative min-h-[80vh] bg-gradient-hero overflow-hidden">
       {/* Background Image */}
@@ -43,7 +51,7 @@ export function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <Button variant="hero" size="lg" className="group" asChild>
-              <a href="/business-formation" aria-label="Go to Business Formation test page">
+              <a href={getLocalizedHref('/business-formation')} aria-label="Go to Business Formation test page">
                 {t('hero.cta_business')}
                 <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </a>

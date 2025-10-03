@@ -1,0 +1,23 @@
+---
+import BaseIt from "../../layouts/BaseIt.astro";
+import { Header } from "../../components/Header.tsx";
+import { Footer } from "../../components/Footer.tsx";
+import HeroIt from "../../LegacybusinesshomeIt/HeroIt.jsx";
+import InfoSectionIt from "../../LegacybusinesshomeIt/InfoSectionIt.jsx";
+import CompanyDetailsIt from "../../LegacybusinesshomeIt/CompanyDetailsIt.jsx";
+import CtaIt from "../../LegacybusinesshomeIt/CtaIt.jsx";
+import FaqIt from "../../LegacybusinesshomeIt/FaqIt.jsx";
+---
+
+<BaseIt>
+  <script>
+    import '../../scripts/init-i18n.ts';
+  </script>
+  <Header client:only="react" />
+  <HeroIt client:only="react" />
+  <InfoSectionIt client:only="react" />
+  <CompanyDetailsIt client:only="react" />
+  <CtaIt client:only="react" />
+  <FaqIt client:only="react" />
+  <Footer client:only="react" />
+</BaseIt>

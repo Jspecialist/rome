@@ -1,0 +1,138 @@
+{
+  "header": {
+    "logo": "Elite Legal Partners",
+    "nav": {
+      "services": "Servizi",
+      "about": "Chi siamo",
+      "attorneys": "Avvocati",
+      "contact": "Contatti"
+    },
+    "phone": "(555) 123-4567",
+    "cta": "Consulenza Gratuita"
+  },
+  "hero": {
+    "trust_banner": "Affidati da oltre 10.000 clienti in tutto il paese",
+    "headline": "Soluzioni legali di fiducia per le imprese,",
+    "headline_accent": "progettate per te",
+    "subheadline": "Consulenza legale esperta e soluzioni complete per le tue esigenze aziendali e personali. Inizia oggi con una consulenza gratuita.",
+    "cta_business": "Costituzione d'impresa",
+    "cta_citizenship": "Cittadinanza / Visto",
+    "stats": {
+      "years": "+40 anni",
+      "years_desc": "affidabili dal 1984",
+      "clients": "10.000+",
+      "clients_desc": "Clienti Soddisfatti",
+      "success": "98%",
+      "success_desc": "Tasso di Successo"
+    }
+  },
+  "about": {
+    "title": "Eccellenza legale di fiducia dal 1984",
+    "description": "Da oltre quattro decenni, Elite Legal Partners è il consulente legale di riferimento per multinazionali, investitori internazionali e individui di oltre 70 nazionalità che fanno affari a Panama. La nostra esperienza nelle transazioni transfrontaliere e nella conformità locale ci ha resi lo studio di riferimento in America Centrale.",
+    "achievements": {
+      "years": "40+",
+      "years_label": "Anni di Esperienza",
+      "clients": "10.000+",
+      "clients_label": "Clienti Serviti",
+      "success": "98%",
+      "success_label": "Tasso di Successo",
+      "nationalities": "70+",
+      "nationalities_label": "Nazionalità Servite"
+    },
+    "credentials_title": "Risultati e Riconoscimenti a Panama",
+    "credentials": [
+      "Consulente legale aziendale multinazionale",
+      "Membro autorizzato dell'Ordine degli Avvocati di Panama",
+      "Specialista in commercio e investimenti internazionali",
+      "Esperto di diritto bancario e finanziario",
+      "Scelto da aziende Fortune 500 a Panama",
+      "Specialista in operazioni transfrontaliere"
+    ],
+    "floating_card": "$50M+",
+    "floating_card_desc": "In accordi e vittorie dei clienti",
+    "quote": "Non offriamo solo servizi legali: costruiamo partnership durature con i nostri clienti, comprendendo le loro esigenze uniche e fornendo soluzioni che generano risultati concreti.",
+    "quote_author": "— Socio Direttore, Elite Legal Partners"
+  },
+  "contact": {
+    "title": "Ottieni la tua consulenza legale gratuita",
+    "description": "Pronto a discutere le tue esigenze legali? Contattaci oggi per una consulenza gratuita e riservata con uno dei nostri avvocati esperti.",
+    "form_title": "Prenota la tua consulenza",
+    "form": {
+      "first_name": "Nome *",
+      "first_name_placeholder": "Inserisci il tuo nome",
+      "last_name": "Cognome *",
+      "last_name_placeholder": "Inserisci il tuo cognome",
+      "email": "Indirizzo Email *",
+      "email_placeholder": "Inserisci la tua email",
+      "phone": "Numero di Telefono *",
+      "phone_placeholder": "Inserisci il tuo numero di telefono",
+      "legal_matter": "Tipo di pratica legale",
+      "legal_matter_placeholder": "es. Costituzione d'impresa, Pianificazione patrimoniale, ecc.",
+      "message": "Raccontaci le tue esigenze legali *",
+      "message_placeholder": "Descrivi la tua situazione legale e come possiamo aiutarti...",
+      "submit": "Prenota consulenza gratuita",
+      "required_note": "* Campi obbligatori. Tutte le consulenze sono riservate."
+    },
+    "info_title": "Informazioni di contatto",
+    "info_description": "Preferisci parlare direttamente? Siamo qui per aiutarti tramite diversi canali.",
+    "contact_methods": {
+      "phone": "Telefono",
+      "phone_desc": "Chiamaci per assistenza immediata",
+      "email": "Email",
+      "email_desc": "Inviaci le tue domande legali",
+      "address": "Indirizzo",
+      "address_details": "123 Legal Plaza, Suite 500\nDistretto Centrale, ST 12345",
+      "address_desc": "Visita il nostro ufficio principale",
+      "hours": "Orari",
+      "hours_details": "Lun - Ven: 8:00 - 18:00\nSab: 9:00 - 14:00",
+      "hours_desc": "Siamo qui quando ne hai bisogno"
+    },
+    "emergency": {
+      "title": "Linea legale di emergenza 24/7",
+      "description": "Per questioni legali urgenti che richiedono attenzione immediata",
+      "cta": "Chiama la linea di emergenza: (555) 999-0000"
+    }
+  },
+  "footer": {
+    "company_name": "Elite Legal Partners",
+    "description": "Dal 1998 offriamo servizi legali di eccellenza con integrità, competenza e dedizione al raggiungimento dei migliori risultati per i nostri clienti.",
+    "legal_services": "Servizi legali",
+    "services": [
+      "Costituzione d'impresa",
+      "Diritto societario",
+      "Proprietà intellettuale",
+      "Contenzioso civile",
+      "Pianificazione patrimoniale",
+      "Diritto del lavoro"
+    ],
+    "resources": "Risorse",
+    "resource_items": [
+      "Blog legale",
+      "Casi studio",
+      "Modulistica legale",
+      "FAQ",
+      "Portale clienti",
+      "Profili degli avvocati"
+    ],
+    "about": "Chi siamo",
+    "about_items": [
+      "Il nostro studio",
+      "I nostri avvocati",
+      "Carriere",
+      "Impegno nella comunità",
+      "Premi e riconoscimenti",
+      "Testimonianze dei clienti"
+    ],
+    "cta": {
+      "title": "Pronto per iniziare?",
+      "description": "Prenota oggi la tua consulenza gratuita e lascia che ti aiutiamo a superare le tue sfide legali.",
+      "button": "Prenota ora la consulenza gratuita"
+    },
+    "copyright": "© 2025 Elite Legal Partners. Tutti i diritti riservati.",
+    "legal_links": {
+      "privacy": "Informativa sulla privacy",
+      "terms": "Termini di servizio",
+      "advertising": "Pubblicità legale"
+    }
+  }
+}

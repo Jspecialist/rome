@@ -12,13 +12,15 @@ import {
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
   { code: 'es', name: 'Español', flag: '🇪🇸' },
+  { code: 'it', name: 'Italiano', flag: '🇮🇹' },
 ];
 
 export function LanguageSwitcher() {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
-  const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
+  const baseCode = (i18n.resolvedLanguage || i18n.language || 'en').split('-')[0];
+  const currentLanguage = languages.find(lang => lang.code === baseCode) || languages[0];
 
   const handleLanguageChange = (languageCode: string) => {
     i18n.changeLanguage(languageCode);
@@ -27,24 +29,25 @@ export function LanguageSwitcher() {
     // Navigate to the appropriate route
     if (typeof window !== 'undefined') {
       const currentPath = window.location.pathname;
-      let newPath;
-      
-      if (languageCode === 'es') {
-        // Switch to Spanish route
-        if (currentPath.startsWith('/es')) {
-          newPath = currentPath; // Already on Spanish route
-        } else {
-          newPath = '/es' + (currentPath === '/' ? '' : currentPath);
+      const supportedPrefixes = ['es', 'it'];
+      const findPrefix = (path: string) => supportedPrefixes.find(p => path === `/${p}` || path.startsWith(`/${p}/`));
+      const currentPrefix = findPrefix(currentPath);
+      let newPath = currentPath;
+
+      if (languageCode === 'en') {
+        // Remove any language prefix for English
+        if (currentPrefix) {
+          newPath = currentPath.replace(`/${currentPrefix}`, '') || '/';
         }
       } else {
-        // Switch to English route
-        if (currentPath.startsWith('/es')) {
-          newPath = currentPath.replace('/es', '') || '/';
+        // Add or replace the prefix for the selected language
+        if (currentPrefix) {
+          newPath = currentPath.replace(`/${currentPrefix}`, `/${languageCode}`);
         } else {
-          newPath = currentPath; // Already on English route
+          newPath = `/${languageCode}${currentPath === '/' ? '' : currentPath}`;
         }
       }
-      
+
       if (newPath !== currentPath) {
         window.location.href = newPath;
       }

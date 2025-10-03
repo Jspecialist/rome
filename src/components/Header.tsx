@@ -13,18 +13,22 @@ const navigation = [
 ];
 
 export function Header() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+
+  // Compute locale-aware home path (e.g., '/', '/es/', '/it/')
+  const lang = (i18n.language || 'en').split('-')[0];
+  const homePath = lang && lang !== 'en' ? `/${lang}/` : '/';
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 flex h-16 items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center">
+        <a href={homePath} aria-label={t('header.logo')} className="flex items-center">
           <h1 className="text-2xl font-serif font-bold text-primary">
             {t('header.logo')}
           </h1>
-        </div>
+        </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">

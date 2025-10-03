@@ -1,0 +1,23 @@
+---
+import BaseEs from "../../layouts/BaseEs.astro";
+import { Header } from "../../components/Header.tsx";
+import { Footer } from "../../components/Footer.tsx";
+import HeroEs from "../../LegacybusinesshomeEs/HeroEs.jsx";
+import InfoSectionEs from "../../LegacybusinesshomeEs/InfoSectionEs.jsx";
+import CompanyDetailsEs from "../../LegacybusinesshomeEs/CompanyDetailsEs.jsx";
+import CtaEs from "../../LegacybusinesshomeEs/CtaEs.jsx";
+import FaqEs from "../../LegacybusinesshomeEs/FaqEs.jsx";
+---
+
+<BaseEs>
+  <script>
+    import '../../scripts/init-i18n.ts';
+  </script>
+  <Header client:only="react" />
+  <HeroEs client:only="react" />
+  <InfoSectionEs client:only="react" />
+  <CompanyDetailsEs client:only="react" />
+  <CtaEs client:only="react" />
+  <FaqEs client:only="react" />
+  <Footer client:only="react" />
+</BaseEs>
