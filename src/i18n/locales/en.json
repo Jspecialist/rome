@@ -4,6 +4,7 @@
     "nav": {
       "services": "Services",
       "about": "About",
+      "visa": "Visa",
       "attorneys": "Attorneys", 
       "contact": "Contact"
     },
@@ -91,6 +92,131 @@
       "title": "24/7 Emergency Legal Line",
       "description": "For urgent legal matters requiring immediate attention",
       "cta": "Call Emergency Line: (555) 999-0000"
+    }
+  },
+  "visa": {
+    "hero": {
+      "title": "Panama Visa & Immigration",
+      "subtitle": "Services",
+      "description": "Expert assistance with all visa types for Panama. Our experienced immigration attorneys have helped over 15,000 clients from 70+ countries to successfully obtain their Panama visas and residency permits.",
+      "cta_assessment": "Free Visa Assessment",
+      "cta_requirements": "View Requirements"
+    },
+    "programs": {
+      "title": "Panama Visa Programs",
+      "description": "We handle all types of visas and residency permits for Panama",
+      "work_visa": {
+        "title": "Work Visa",
+        "description": "For individuals seeking employment opportunities in Panama.",
+        "features": [
+          "Job offer permit included",
+          "Fast 15 business day processing",
+          "Family members included",
+          "2-year initial validity"
+        ]
+      },
+      "investor_visa": {
+        "title": "Investor Visa",
+        "description": "For entrepreneurs and investors establishing business in Panama.",
+        "features": [
+          "Minimum investment required",
+          "Business operations rights",
+          "Renewable status",
+          "Add family & friends"
+        ]
+      },
+      "retirement_visa": {
+        "title": "Retirement Visa (Pensionado)",
+        "description": "For retirees with pension income who plan to establish monthly income.",
+        "features": [
+          "For retirees working outside Panama",
+          "Significant discounts on services",
+          "Low monthly payment required",
+          "No minimum stay requirement"
+        ]
+      },
+      "family_visa": {
+        "title": "Family Reunification Visa",
+        "description": "Family members can be sponsored depending on relationship.",
+        "features": [
+          "Fast track family procedure",
+          "Wives and unmarried children",
+          "No age gap planning",
+          "Includes dependent dependents"
+        ]
+      },
+      "friendly_nations": {
+        "title": "Friendly Nations Visa",
+        "description": "Streamlined visas for residents of 50+ countries with diplomatic ties to Panama.",
+        "features": [
+          "Fast processing in 3 months",
+          "Economic or professional tax required",
+          "Permanent visa (good)",
+          "3-month validity period"
+        ]
+      },
+      "tourist_extension": {
+        "title": "Tourist Visa Extension",
+        "description": "Extend your visa beyond the standard 90 day period.",
+        "features": [
+          "Up to 2 additional months",
+          "Business/tourist purposes",
+          "No departure required",
+          "Multiple extensions possible"
+        ]
+      }
+    },
+    "process": {
+      "title": "Our Visa Application Process",
+      "description": "A streamlined approach that has successfully served thousands of clients",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Initial Consultation",
+          "description": "Meet with our immigration specialists to assess your eligibility and determine the best visa program for your needs."
+        },
+        {
+          "number": "02",
+          "title": "Document Preparation",
+          "description": "We guide you through gathering and processing all required documentation. Experience in translation services."
+        },
+        {
+          "number": "03",
+          "title": "Application Submission",
+          "description": "We submit your application to immigration authorities and handle all communication with the government."
+        },
+        {
+          "number": "04",
+          "title": "Follow-up & Approval",
+          "description": "We manage the process through approval ensuring timely responses to any government requests."
+        }
+      ]
+    },
+    "why_choose": {
+      "title": "Why Choose Elite Legal Partners?",
+      "benefits": [
+        {
+          "title": "40+ Years of Experience",
+          "description": "Since 1984, we've been helping international clients navigate Panama's immigration system successfully."
+        },
+        {
+          "title": "70+ Nationalities Served",
+          "description": "Our multilingual team has successfully processed visas for clients from every corner of the world."
+        },
+        {
+          "title": "Government Relationships",
+          "description": "Strong relationships with regulatory authorities ensure prompt and efficient processing of your application."
+        },
+        {
+          "title": "Full-Service Support",
+          "description": "From initial consultation to our approval and beyond, we're with you every step of the way."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Start Your Visa Application Today",
+      "description": "Get a free consultation with our immigration specialists",
+      "button": "Schedule Free Consultation"
     }
   },
   "footer": {

@@ -1,0 +1,177 @@
+---
+import Base from "../../layouts/Base.astro";
+import { Header } from "../../components/Header.tsx";
+import { Footer } from "../../components/Footer.tsx";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { CheckCircle, Globe, FileText, Users, Clock, Shield } from "lucide-react";
+
+const benefits = [
+  {
+    icon: Globe,
+    title: "Global Mobility",
+    desc: "Access to visa-free travel to over 140 countries worldwide",
+  },
+  {
+    icon: Shield,
+    title: "Secure Investment",
+    desc: "Stable political and economic environment for your family's future",
+  },
+  {
+    icon: Users,
+    title: "Family Inclusion",
+    desc: "Include your spouse and dependent children in your application",
+  },
+  {
+    icon: FileText,
+    title: "No Residency Required",
+    desc: "Obtain citizenship through various investment programs",
+  },
+];
+
+const programs = [
+  {
+    title: "Citizenship by Investment",
+    desc: "Obtain citizenship through a qualifying donation, real estate, or government bond investment.",
+    reqs: [
+      "Clean criminal record",
+      "Proof of funds and lawful source of wealth",
+      "Government due diligence approval",
+      "Minimum investment per program guidelines",
+    ],
+    timeframe: "3–8 months",
+  },
+  {
+    title: "Citizenship by Naturalization",
+    desc: "Residency leading to citizenship after a lawful stay and meeting integration criteria.",
+    reqs: [
+      "Valid residence permit",
+      "Minimum stay requirements",
+      "Basic language and civics (where applicable)",
+      "Good moral character",
+    ],
+    timeframe: "2–10 years (varies by country)",
+  },
+  {
+    title: "Citizenship by Descent",
+    desc: "Claim citizenship through parents, grandparents, or ancestors under nationality laws.",
+    reqs: [
+      "Documented family lineage",
+      "Certified civil records and apostilles",
+      "No serious criminal record",
+      "Compliance with consular procedures",
+    ],
+    timeframe: "6–24 months",
+  },
+];
+---
+
+<Base>
+  <script>
+    import '../../scripts/init-i18n.ts';
+  </script>
+
+  <Header client:only="react" />
+
+  <main>
+    {/* Hero Section */}
+    <section class="relative overflow-hidden pt-36 pb-20 md:pt-44 md:pb-28 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-6xl font-serif font-bold tracking-tight text-slate-900 mb-6">
+            Panamanian Citizenship Services
+          </h1>
+          <p class="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+            Expert guidance through every step of obtaining Panamanian citizenship. With over 40 years of experience, we help individuals and families achieve their citizenship goals efficiently and reliably.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button class="px-8 py-3 rounded-lg font-medium text-white shadow-md hover:opacity-90 transition-opacity" style={{backgroundColor: '#f97316'}}>Schedule Consultation</button>
+            <button class="px-8 py-3 rounded-lg font-medium text-gray-700 bg-white border-2 border-gray-300 hover:bg-gray-50 transition-colors">Download Guide</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Benefits Section */}
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold tracking-tight text-slate-900 mb-4">
+            Benefits of Panamanian Citizenship
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Panama offers one of the most attractive citizenship programs in Latin America
+          </p>
+        </div>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {benefits.map((b, index) => {
+            const Icon = b.icon;
+            return (
+              <div key={index} class="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+                <div class="mb-4 inline-flex items-center justify-center mx-auto" style={{backgroundColor: '#f97316', width: '64px', height: '64px', borderRadius: '9999px', display: 'flex'}}>
+                  <Icon className="" style={{color: 'white', width: '28px', height: '28px', strokeWidth: 1.75}} />
+                </div>
+                <h3 class="text-lg font-semibold mb-3 text-slate-900">{b.title}</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">{b.desc}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    {/* Citizenship Programs */}
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold tracking-tight text-slate-900 mb-4">
+            Citizenship Programs
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Choose the route that best fits your goals and timeline
+          </p>
+        </div>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+          {programs.map((p, index) => (
+            <div key={index} class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+              <h3 class="text-2xl font-serif font-bold text-slate-900 mb-4">{p.title}</h3>
+              <p class="text-gray-600 mb-6">{p.desc}</p>
+              <div class="space-y-3 mb-6">
+                <h4 class="font-semibold flex items-center gap-2 text-slate-900">
+                  <CheckCircle class="h-5 w-5" style={{color: '#f97316'}} />
+                  Typical Requirements
+                </h4>
+                <ul class="space-y-2 ml-7">
+                  {p.reqs.map((r, idx) => (
+                    <li key={idx} class="text-sm text-gray-600">• {r}</li>
+                  ))}
+                </ul>
+              </div>
+              <div class="flex items-center gap-2 text-sm text-gray-500 pt-4 border-t border-gray-200">
+                <Clock class="h-4 w-4" />
+                <span>Estimated timeframe: {p.timeframe}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* CTA Section */}
+    <section class="py-20 bg-slate-900 text-white relative overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold tracking-tight mb-6">
+            Start Your Citizenship Journey Today
+          </h2>
+          <p class="text-xl mb-8 text-gray-300">
+            Our attorneys guide you from eligibility assessment to passport in hand
+          </p>
+          <button class="px-8 py-3 rounded-lg font-medium text-white shadow-md hover:opacity-90 transition-opacity" style={{backgroundColor: '#f97316'}}>Speak with an Immigration Attorney</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer client:only="react" />
+</Base>

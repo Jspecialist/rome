@@ -4,6 +4,7 @@
     "nav": {
       "services": "Servicios",
       "about": "Nosotros",
+      "visa": "Visa",
       "attorneys": "Abogados", 
       "contact": "Contacto"
     },
@@ -93,8 +94,133 @@
       "cta": "Llamar Línea de Emergencia: (555) 999-0000"
     }
   },
+  "visa": {
+    "hero": {
+      "title": "Visa y Inmigración de",
+      "subtitle": "Panamá - Servicios",
+      "description": "Asistencia experta con todos los tipos de visa para Panamá. Nuestros abogados de inmigración experimentados han ayudado a más de 15,000 clientes de más de 70 países a obtener exitosamente sus visas y permisos de residencia de Panamá.",
+      "cta_assessment": "Evaluación Gratuita de Visa",
+      "cta_requirements": "Ver Requisitos"
+    },
+    "programs": {
+      "title": "Programas de Visa de Panamá",
+      "description": "Manejamos todos los tipos de visas y permisos de residencia para Panamá",
+      "work_visa": {
+        "title": "Visa de Trabajo",
+        "description": "Para individuos que buscan oportunidades de empleo en Panamá.",
+        "features": [
+          "Permiso de oferta laboral incluido",
+          "Procesamiento rápido en 15 días hábiles",
+          "Miembros de la familia incluidos",
+          "Validez inicial de 2 años"
+        ]
+      },
+      "investor_visa": {
+        "title": "Visa de Inversionista",
+        "description": "Para empresarios e inversionistas que establecen negocios en Panamá.",
+        "features": [
+          "Inversión mínima requerida",
+          "Derechos de operaciones comerciales",
+          "Estado renovable",
+          "Agregar familia y amigos"
+        ]
+      },
+      "retirement_visa": {
+        "title": "Visa de Jubilación (Pensionado)",
+        "description": "Para jubilados con ingresos de pensión que planean establecer ingresos mensuales.",
+        "features": [
+          "Para jubilados trabajando fuera de Panamá",
+          "Descuentos significativos en servicios",
+          "Pago mensual bajo requerido",
+          "Sin requisito de estadía mínima"
+        ]
+      },
+      "family_visa": {
+        "title": "Visa de Reunificación Familiar",
+        "description": "Los miembros de la familia pueden ser patrocinados dependiendo de la relación.",
+        "features": [
+          "Procedimiento familiar de vía rápida",
+          "Esposas e hijos solteros",
+          "Sin planificación de brecha de edad",
+          "Incluye dependientes dependientes"
+        ]
+      },
+      "friendly_nations": {
+        "title": "Visa de Naciones Amigas",
+        "description": "Visas simplificadas para residentes de más de 50 países con lazos diplomáticos con Panamá.",
+        "features": [
+          "Procesamiento rápido en 3 meses",
+          "Impuesto económico o profesional requerido",
+          "Visa permanente (buena)",
+          "Período de validez de 3 meses"
+        ]
+      },
+      "tourist_extension": {
+        "title": "Extensión de Visa Turística",
+        "description": "Extienda su visa más allá del período estándar de 90 días.",
+        "features": [
+          "Hasta 2 meses adicionales",
+          "Propósitos comerciales/turísticos",
+          "No se requiere salida",
+          "Extensiones múltiples posibles"
+        ]
+      }
+    },
+    "process": {
+      "title": "Nuestro Proceso de Solicitud de Visa",
+      "description": "Un enfoque simplificado que ha servido exitosamente a miles de clientes",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Consulta Inicial",
+          "description": "Reunirse con nuestros especialistas en inmigración para evaluar su elegibilidad y determinar el mejor programa de visa para sus necesidades."
+        },
+        {
+          "number": "02",
+          "title": "Preparación de Documentos",
+          "description": "Le guiamos a través de la recopilación y procesamiento de toda la documentación requerida. Experiencia en servicios de traducción."
+        },
+        {
+          "number": "03",
+          "title": "Envío de Solicitud",
+          "description": "Enviamos su solicitud a las autoridades de inmigración y manejamos toda la comunicación con el gobierno."
+        },
+        {
+          "number": "04",
+          "title": "Seguimiento y Aprobación",
+          "description": "Gestionamos el proceso hasta la aprobación asegurando respuestas oportunas a cualquier solicitud del gobierno."
+        }
+      ]
+    },
+    "why_choose": {
+      "title": "¿Por Qué Elegir Elite Legal Partners?",
+      "benefits": [
+        {
+          "title": "Más de 40 Años de Experiencia",
+          "description": "Desde 1984, hemos estado ayudando a clientes internacionales a navegar exitosamente el sistema de inmigración de Panamá."
+        },
+        {
+          "title": "Más de 70 Nacionalidades Atendidas",
+          "description": "Nuestro equipo multilingüe ha procesado exitosamente visas para clientes de todos los rincones del mundo."
+        },
+        {
+          "title": "Relaciones Gubernamentales",
+          "description": "Relaciones sólidas con las autoridades regulatorias aseguran un procesamiento rápido y eficiente de su solicitud."
+        },
+        {
+          "title": "Soporte de Servicio Completo",
+          "description": "Desde la consulta inicial hasta nuestra aprobación y más allá, estamos con usted en cada paso del camino."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Comience Su Solicitud de Visa Hoy",
+      "description": "Obtenga una consulta gratuita con nuestros especialistas en inmigración",
+      "button": "Programar Consulta Gratuita"
+    }
+  },
   "footer": {
-    "company_name": "Elite Legal Partners",
+    "company_name": "Esquivel & Asociados",
     "description": "Brindando servicios legales excepcionales con integridad, experiencia y dedicación para lograr los mejores resultados para nuestros clientes desde 1998.",
     "legal_services": "Servicios Legales",
     "services": [
@@ -128,7 +254,7 @@
       "description": "Programe su consulta gratuita hoy y permítanos ayudarle a navegar sus desafíos legales.",
       "button": "Programar Consulta Gratuita Ahora"
     },
-    "copyright": "© 2025 Elite Legal Partners. Todos los derechos reservados.",
+    "copyright": "© 2026 Esquivel & Asociados. Todos los derechos reservados.",
     "legal_links": {
       "privacy": "Política de Privacidad",
       "terms": "Términos de Servicio", 

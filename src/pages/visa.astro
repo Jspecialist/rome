@@ -1,0 +1,15 @@
+---
+import Base from "../layouts/Base.astro";
+import { Header } from "../components/Header.tsx";
+import { Footer } from "../components/Footer.tsx";
+import Visa from "../components/Visa.tsx";
+---
+
+<Base>
+  <script>
+    import '../scripts/init-i18n.ts';
+  </script>
+  <Header client:only="react" />
+  <Visa client:only="react" />
+  <Footer client:only="react" />
+</Base>

@@ -5,9 +5,16 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
-const navigation = [
+interface NavigationItem {
+  key: string;
+  href: string;
+  localeAware?: boolean;
+}
+
+const navigation: NavigationItem[] = [
   { key: "services", href: "#services" },
   { key: "about", href: "#about" },
+  { key: "visa", href: "/visa", localeAware: true },
   { key: "attorneys", href: "#attorneys" },
   { key: "contact", href: "#contact" },
 ];
@@ -32,15 +39,20 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {navigation.map((item) => (
-            <a
-              key={item.key}
-              href={item.href}
-              className="text-sm font-medium text-foreground hover:text-accent transition-colors ease-smooth"
-            >
-              {t(`header.nav.${item.key}`)}
-            </a>
-          ))}
+          {navigation.map((item) => {
+            const href = item.localeAware 
+              ? (lang && lang !== 'en' ? `/${lang}${item.href}` : item.href)
+              : item.href;
+            return (
+              <a
+                key={item.key}
+                href={href}
+                className="text-sm font-medium text-foreground hover:text-accent transition-colors ease-smooth"
+              >
+                {t(`header.nav.${item.key}`)}
+              </a>
+            );
+          })}
         </nav>
 
         {/* Contact & CTA */}
@@ -68,16 +80,21 @@ export function Header() {
               <div className="flex flex-col space-y-6 mt-6">
                 <h2 className="text-xl font-serif font-semibold">Menu</h2>
                 <nav className="flex flex-col space-y-4">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.key}
-                      href={item.href}
-                      onClick={() => setIsOpen(false)}
-                      className="text-lg font-medium text-foreground hover:text-accent transition-colors ease-smooth"
-                    >
-                      {t(`header.nav.${item.key}`)}
-                    </a>
-                  ))}
+                  {navigation.map((item) => {
+                    const href = item.localeAware 
+                      ? (lang && lang !== 'en' ? `/${lang}${item.href}` : item.href)
+                      : item.href;
+                    return (
+                      <a
+                        key={item.key}
+                        href={href}
+                        onClick={() => setIsOpen(false)}
+                        className="text-lg font-medium text-foreground hover:text-accent transition-colors ease-smooth"
+                      >
+                        {t(`header.nav.${item.key}`)}
+                      </a>
+                    );
+                  })}
                 </nav>
                 <div className="flex flex-col space-y-4 pt-6 border-t">
                   <a

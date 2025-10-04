@@ -8,11 +8,11 @@ const CtaEs = () => {
         <div className="bg-gradient-hero rounded-xl p-8 text-primary-foreground grid lg:grid-cols-2 gap-8 items-center shadow-medium">
           <div>
             <h2 className="text-2xl md:text-3xl font-serif font-bold mb-3">Forme su empresa en Panamá hoy</h2>
-            <p className="text-primary-foreground/90 mb-6">Nuestros expertos le guiarán a través de un proceso rápido, conforme y completamente en línea.</p>
+            <p className="text-primary-foreground/90 mb-6">Nuestros expertos le guiarán a través de todo el proceso, de manera rápida y sin complicaciones</p>
 
             <div className="grid sm:grid-cols-3 gap-4 mb-8">
-              <div className="flex items-center gap-2"><CheckCircle className="h-5 w-5" /><span>100% en línea</span></div>
-              <div className="flex items-center gap-2"><Shield className="h-5 w-5" /><span>Confidencial y seguro</span></div>
+              <div className="flex items-center gap-2"><CheckCircle className="h-5 w-5" /><span>Proceso 100% en línea</span></div>
+              <div className="flex items-center gap-2"><Shield className="h-5 w-5" /><span>Confidencialidad garantizada</span></div>
               <div className="flex items-center gap-2"><Clock className="h-5 w-5" /><span>Formación en menos de 10 días</span></div>
             </div>
 

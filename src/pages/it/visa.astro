@@ -1,0 +1,204 @@
+---
+import Base from "../../layouts/BaseIt.astro";
+import { Header } from "../../components/Header.tsx";
+import { Footer } from "../../components/Footer.tsx";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { CheckCircle, Clock, FileText, Landmark, Briefcase, Trees, Laptop, Users } from "lucide-react";
+
+const visaPrograms = [
+  {
+    title: "Visto Paesi Amici",
+    desc: "Residenza accelerata per cittadini di paesi designati con legami economici o professionali con Panama.",
+    reqs: [
+      "Passaporto di un Paese Amico",
+      "Prova di legami professionali/economici (impiego, società o attività professionale)",
+      "Referenza bancaria e prova di solvibilità",
+      "Fedina penale pulita e assicurazione sanitaria di base",
+    ],
+    timeframe: "2–4 mesi (tipico)",
+  },
+  {
+    title: "Visto Pensionato (Pensionado)",
+    desc: "Residenza permanente per pensionati con pensione vitalizia che raggiunge la soglia minima.",
+    reqs: [
+      "Prova di pensione vitalizia (statale o privata)",
+      "Importo mensile minimo secondo normativa vigente",
+      "Fedina penale pulita e assicurazione sanitaria di base",
+      "Documenti certificati e apostillati",
+    ],
+    timeframe: "2–3 mesi (tipico)",
+  },
+  {
+    title: "Visto per Lavoro Professionale",
+    desc: "Residenza per professionisti assunti da aziende panamensi in ruoli consentiti.",
+    reqs: [
+      "Contratto di lavoro con datore panamense",
+      "Laurea e qualifiche professionali (se applicabile)",
+      "Iscrizione alla previdenza sociale",
+      "Conformità del datore con quote e regolamenti del lavoro",
+    ],
+    timeframe: "3–5 mesi (tipico)",
+  },
+  {
+    title: "Residenza per Investimento (Investitore Qualificato)",
+    desc: "Residenza tramite investimenti in immobili, titoli o depositi a termine che soddisfano le soglie del programma.",
+    reqs: [
+      "Investimento qualificato (immobili, titoli o deposito bancario)",
+      "Prova della lecita provenienza dei fondi",
+      "Conformità bancaria (KYC) e due diligence",
+      "Fedina penale pulita e assicurazione sanitaria di base",
+    ],
+    timeframe: "2–4 mesi dopo il completamento dell'investimento",
+  },
+  {
+    title: "Visto Investitore Riforestazione",
+    desc: "Residenza tramite progetti di riforestazione approvati dal governo che rispettano l'investimento minimo.",
+    reqs: [
+      "Investimento in un progetto di riforestazione approvato",
+      "Contratti, fatture e certificazioni di supporto",
+      "Prova della lecita provenienza dei fondi",
+      "Fedina penale pulita",
+    ],
+    timeframe: "3–6 mesi (tipico)",
+  },
+  {
+    title: "Visto Lavoratore da Remoto (Soggiorno Breve)",
+    desc: "Status temporaneo per nomadi digitali impiegati da aziende straniere mentre risiedono a Panama.",
+    reqs: [
+      "Rapporto di lavoro/contratto con azienda estera",
+      "Soglia di reddito minimo e prova di lavoro da remoto",
+      "Assicurazione di viaggio e documenti di solvibilità",
+      "Fedina penale pulita",
+    ],
+    timeframe: "1–2 mesi (tipico)",
+  },
+  {
+    title: "Familiari a Carico e Ricongiungimento",
+    desc: "Opzioni di residenza per coniugi, figli minori e altri familiari a carico idonei del richiedente principale.",
+    reqs: [
+      "Certificati di stato civile (matrimonio, nascita) con apostille",
+      "Prova della capacità economica del richiedente principale",
+      "Copertura assicurativa sanitaria",
+      "Fedina penale pulita per i maggiorenni a carico",
+    ],
+    timeframe: "In linea con il processo del richiedente principale",
+  },
+];
+---
+
+<Base>
+  <script>
+    import '../../scripts/init-i18n.ts';
+  </script>
+
+  <Header client:only="react" />
+
+  <main>
+    {/* Hero */}
+    <section class="relative bg-gradient-to-br from-primary/10 via-background to-accent/5 py-20 md:py-32">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-6xl font-serif font-bold tracking-tight text-primary mb-6">
+            Visti e Residenza a Panama
+          </h1>
+          <p class="text-xl text-muted-foreground mb-8 leading-relaxed">
+            Soluzioni di immigrazione per investitori, professionisti, pensionati e famiglie—con assistenza di avvocati a Panama.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" variant="hero">Prenota una Consulenza Gratuita</Button>
+            <Button size="lg" variant="outline">Scarica la Guida ai Visti</Button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Programs */}
+    <section class="py-20 bg-background">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold tracking-tight text-primary mb-4">
+            Opzioni di Residenza e Visti per Panama
+          </h2>
+          <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Valutiamo la tua idoneità e consigliamo il percorso più efficiente per ottenere la residenza legale o un soggiorno a lungo termine a Panama.
+          </p>
+        </div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {visaPrograms.map((p) => (
+            <Card class="border rounded-xl shadow-sm hover:shadow-xl transition-shadow">
+              <CardContent class="p-8">
+                <h3 class="text-2xl font-serif font-bold text-primary mb-3">{p.title}</h3>
+                <p class="text-muted-foreground mb-6">{p.desc}</p>
+                <div class="space-y-3 mb-6">
+                  <h4 class="font-semibold flex items-center gap-2">
+                    <CheckCircle class="h-5 w-5 text-accent" />
+                    Requisiti Tipici
+                  </h4>
+                  <ul class="space-y-2 ml-7">
+                    {p.reqs.map((r) => (
+                      <li class="text-sm text-muted-foreground">• {r}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-muted-foreground pt-4 border-t">
+                  <Clock class="h-4 w-4" />
+                  <span>Tempistiche stimate: {p.timeframe}</span>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* Process */}
+    <section class="py-20 bg-accent/5">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold tracking-tight text-primary mb-4">
+            Il Nostro Processo di Immigrazione
+          </h2>
+          <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Assistenza legale completa—dalla valutazione dell'idoneità fino al rilascio della tessera di residenza.
+          </p>
+        </div>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+          <Card class="border rounded-xl"><CardContent class="p-6">
+            <h3 class="font-semibold mb-2 flex items-center gap-2"><FileText class="h-5 w-5 text-accent"/>1. Consulenza e Strategia</h3>
+            <p class="text-muted-foreground">Analizziamo il tuo profilo (cittadinanza, reddito, famiglia, obiettivi) e consigliamo la categoria di visto ottimale.</p>
+          </CardContent></Card>
+          <Card class="border rounded-xl"><CardContent class="p-6">
+            <h3 class="font-semibold mb-2 flex items-center gap-2"><Landmark class="h-5 w-5 text-accent"/>2. Documenti e Apostille</h3>
+            <p class="text-muted-foreground">Forniamo liste e modelli personalizzati e guidiamo notarizzazioni/apostille e traduzioni in spagnolo.</p>
+          </CardContent></Card>
+          <Card class="border rounded-xl"><CardContent class="p-6">
+            <h3 class="font-semibold mb-2 flex items-center gap-2"><Briefcase class="h-5 w-5 text-accent"/>3. Presentazione e Dati Biometrici</h3>
+            <p class="text-muted-foreground">Prepariamo e presentiamo presso il SNM e coordiniamo i dati biometrici/la tessera temporanea.</p>
+          </CardContent></Card>
+          <Card class="border rounded-xl"><CardContent class="p-6">
+            <h3 class="font-semibold mb-2 flex items-center gap-2"><Users class="h-5 w-5 text-accent"/>4. Approvazione e Tessera di Residenza</h3>
+            <p class="text-muted-foreground">Dopo l'approvazione, assistiamo con il rilascio della tessera di residenza e, se applicabile, con la cédula.</p>
+          </CardContent></Card>
+        </div>
+      </div>
+    </section>
+
+    {/* CTA */}
+    <section class="py-20 bg-primary text-primary-foreground">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold tracking-tight mb-6">
+            Inizia il Tuo Percorso di Residenza a Panama
+          </h2>
+          <p class="text-xl mb-8 opacity-90">
+            Parla con un avvocato di immigrazione a Panama sulla tua idoneità e i prossimi passi.
+          </p>
+          <Button size="lg" variant="secondary">Parla con un Avvocato di Immigrazione</Button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer client:only="react" />
+</Base>
