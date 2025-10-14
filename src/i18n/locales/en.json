@@ -1,6 +1,6 @@
 {
   "header": {
-    "logo": "Elite Legal Partners",
+    "logo": "Esquivel & Asociados",
     "nav": {
       "services": "Services",
       "about": "About",
@@ -29,7 +29,7 @@
   },
   "about": {
     "title": "Trusted Legal Excellence Since 1984",
-    "description": "For over four decades, Elite Legal Partners has been the premier legal advisor to multinational corporations, international investors, and individuals from over 70 nationalities doing business in Panama. Our expertise in cross-border transactions and local compliance has made us the go-to firm in Central America.",
+    "description": "For over four decades, Esquivel & Asociados has been the premier legal advisor to multinational corporations, international investors, and individuals from over 70 nationalities doing business in Panama. Our expertise in cross-border transactions and local compliance has made us the go-to firm in Central America.",
     "achievements": {
       "years": "40+",
       "years_label": "Years Experience",
@@ -52,7 +52,7 @@
     "floating_card": "$50M+",
     "floating_card_desc": "In Client Settlements & Victories",
     "quote": "We don't just provide legal services – we build lasting partnerships with our clients, understanding their unique needs and delivering solutions that drive real results.",
-    "quote_author": "— Managing Partner, Elite Legal Partners"
+    "quote_author": "— Managing Partner, Esquivel & Asociados"
   },
   "contact": {
     "title": "Get Your Free Legal Consultation",
@@ -193,7 +193,7 @@
       ]
     },
     "why_choose": {
-      "title": "Why Choose Elite Legal Partners?",
+      "title": "Why Choose Esquivel & Asociados?",
       "benefits": [
         {
           "title": "40+ Years of Experience",
@@ -220,7 +220,7 @@
     }
   },
   "footer": {
-    "company_name": "Elite Legal Partners",
+    "company_name": "Esquivel & Asociados",
     "description": "Providing exceptional legal services with integrity, expertise, and dedication to achieving the best outcomes for our clients since 1998.",
     "legal_services": "Legal Services",
     "services": [
@@ -254,7 +254,7 @@
       "description": "Schedule your free consultation today and let us help you navigate your legal challenges.",
       "button": "Schedule Free Consultation Now"
     },
-    "copyright": "© 2025 Elite Legal Partners. All rights reserved.",
+    "copyright": "© 2025 Esquivel & Asociados. All rights reserved.",
     "legal_links": {
       "privacy": "Privacy Policy",
       "terms": "Terms of Service", 

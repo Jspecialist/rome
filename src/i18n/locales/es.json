@@ -1,6 +1,6 @@
 {
   "header": {
-    "logo": "Elite Legal Partners",
+    "logo": "Esquivel & Asociados",
     "nav": {
       "services": "Servicios",
       "about": "Nosotros",
@@ -29,7 +29,7 @@
   },
   "about": {
     "title": "Excelencia Legal de Confianza Desde 1984",
-    "description": "Durante más de cuatro décadas, Elite Legal Partners ha sido el asesor legal líder para corporaciones multinacionales, inversionistas internacionales e individuos de más de 70 nacionalidades que hacen negocios en Panamá. Nuestra experiencia en transacciones transfronterizas y cumplimiento local nos ha convertido en la firma de referencia en América Central.",
+    "description": "Durante más de cuatro décadas, Esquivel & Asociados ha sido el asesor legal líder para corporaciones multinacionales, inversionistas internacionales e individuos de más de 70 nacionalidades que hacen negocios en Panamá. Nuestra experiencia en transacciones transfronterizas y cumplimiento local nos ha convertido en la firma de referencia en América Central.",
     "achievements": {
       "years": "40+",
       "years_label": "Años de Experiencia",
@@ -52,7 +52,7 @@
     "floating_card": "$50M+",
     "floating_card_desc": "En Acuerdos y Victorias de Clientes",
     "quote": "No solo brindamos servicios legales: construimos asociaciones duraderas con nuestros clientes, entendiendo sus necesidades únicas y entregando soluciones que generan resultados reales.",
-    "quote_author": "— Socio Gerente, Elite Legal Partners"
+    "quote_author": "— Socio Gerente, Esquivel & Asociados"
   },
   "contact": {
     "title": "Obtenga Su Consulta Legal Gratuita",
@@ -193,7 +193,7 @@
       ]
     },
     "why_choose": {
-      "title": "¿Por Qué Elegir Elite Legal Partners?",
+      "title": "¿Por Qué Elegir Esquivel & Asociados?",
       "benefits": [
         {
           "title": "Más de 40 Años de Experiencia",

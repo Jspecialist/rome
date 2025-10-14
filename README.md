@@ -1,6 +1,6 @@
 # Rome - Multilingual Legal Website
 
-> **Elite Legal Partners** - Professional legal services website with complete English and Spanish support
+> **Esquivel & Asociados** - Professional legal services website with complete English and Spanish support
 
 ## 🌟 Features
 
