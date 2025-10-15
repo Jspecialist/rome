@@ -18,7 +18,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/hero-bglawyers.jpg"
+          src="/Images/hero-bglawyers.jpg"
           alt="Professional legal team"
           className="w-full h-full object-cover opacity-20"
         />

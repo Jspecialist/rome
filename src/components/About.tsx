@@ -64,7 +64,7 @@ export function About() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-strong">
               <img
-                src="/consultation-C8f7Rmrh.jpg"
+                src="/Images/consultation-C8f7Rmrh.jpg"
                 alt="Professional legal consultation"
                 className="w-full h-[600px] object-cover"
               />

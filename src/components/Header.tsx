@@ -13,9 +13,8 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { key: "services", href: "#services" },
-  { key: "about", href: "#about" },
-  { key: "visa", href: "/visa", localeAware: true },
-  { key: "attorneys", href: "#attorneys" },
+  { key: "business_formation", href: "/business-formation", localeAware: true },
+  { key: "citizenship", href: "/citizenship", localeAware: true },
   { key: "contact", href: "#contact" },
 ];
 
@@ -31,7 +30,12 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 flex h-16 items-center justify-between">
         {/* Logo */}
-        <a href={homePath} aria-label={t('header.logo')} className="flex items-center">
+        <a href={homePath} aria-label={t('header.logo')} className="flex items-center gap-3">
+          <img 
+            src="/Images/Esquivel & Asociados.svg" 
+            alt="Esquivel & Asociados Logo" 
+            className="h-10 w-auto"
+          />
           <h1 className="text-2xl font-serif font-bold text-primary">
             {t('header.logo')}
           </h1>
@@ -59,11 +63,11 @@ export function Header() {
         <div className="flex items-center space-x-4">
           <LanguageSwitcher />
           <a
-            href="tel:+15551234567"
+            href="tel:+15072697259"
             className="hidden lg:flex items-center text-sm font-medium text-foreground hover:text-accent transition-colors ease-smooth"
           >
             <Phone className="h-4 w-4 mr-2" />
-            {t('header.phone')}
+            (507) 269-7259
           </a>
           <Button variant="hero" className="hidden md:flex">
             {t('header.cta')}
@@ -98,11 +102,11 @@ export function Header() {
                 </nav>
                 <div className="flex flex-col space-y-4 pt-6 border-t">
                   <a
-                    href="tel:+15551234567"
+                    href="tel:+15072697259"
                     className="flex items-center text-lg font-medium text-foreground hover:text-accent transition-colors ease-smooth"
                   >
                     <Phone className="h-5 w-5 mr-3" />
-                    {t('header.phone')}
+                    (507) 269-7259
                   </a>
                   <Button variant="hero" size="lg" className="w-full">
                     {t('header.cta')}
