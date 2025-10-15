@@ -62,26 +62,26 @@ export function Hero() {
           </div>
 
           {/* Trust Indicators */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl">
-            <div className="flex items-center text-primary-foreground/90">
-              <Award className="h-8 w-8 text-accent mr-4 flex-shrink-0" />
+          <div className="grid grid-cols-3 gap-6 sm:gap-8 max-w-2xl">
+            <div className="flex flex-col items-center text-center text-primary-foreground/90">
+              <Award className="h-8 w-8 text-accent mb-2 flex-shrink-0" />
               <div>
-                <div className="font-semibold text-lg">{t('hero.stats.years')}</div>
-                <div className="text-sm opacity-80">{t('hero.stats.years_desc')}</div>
+                <div className="font-semibold text-base md:text-lg">{t('hero.stats.years')}</div>
+                <div className="text-xs md:text-sm opacity-80">{t('hero.stats.years_desc')}</div>
               </div>
             </div>
-            <div className="flex items-center text-primary-foreground/90">
-              <Users className="h-8 w-8 text-accent mr-4 flex-shrink-0" />
+            <div className="flex flex-col items-center text-center text-primary-foreground/90">
+              <Users className="h-8 w-8 text-accent mb-2 flex-shrink-0" />
               <div>
-                <div className="font-semibold text-lg">{t('hero.stats.clients')}</div>
-                <div className="text-sm opacity-80">{t('hero.stats.clients_desc')}</div>
+                <div className="font-semibold text-base md:text-lg">{t('hero.stats.clients')}</div>
+                <div className="text-xs md:text-sm opacity-80">{t('hero.stats.clients_desc')}</div>
               </div>
             </div>
-            <div className="flex items-center text-primary-foreground/90">
-              <Shield className="h-8 w-8 text-accent mr-4 flex-shrink-0" />
+            <div className="flex flex-col items-center text-center text-primary-foreground/90">
+              <Shield className="h-8 w-8 text-accent mb-2 flex-shrink-0" />
               <div>
-                <div className="font-semibold text-lg">{t('hero.stats.success')}</div>
-                <div className="text-sm opacity-80">{t('hero.stats.success_desc')}</div>
+                <div className="font-semibold text-base md:text-lg">{t('hero.stats.success')}</div>
+                <div className="text-xs md:text-sm opacity-80">{t('hero.stats.success_desc')}</div>
               </div>
             </div>
           </div>
