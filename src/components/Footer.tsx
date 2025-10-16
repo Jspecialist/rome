@@ -31,7 +31,7 @@ export function Footer() {
               </div>
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-3 text-accent" />
-                <span className="text-sm">contact@elitelegalpartners.com</span>
+                <span className="text-sm">esquiyas@esquiyaslaw.com</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="h-4 w-4 mr-3 mt-1 text-accent" />

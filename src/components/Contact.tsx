@@ -19,7 +19,7 @@ export function Contact() {
     {
       icon: Mail,
       titleKey: "email", 
-      details: "contact@elitelegalpartners.com",
+      details: "esquiyas@esquiyaslaw.com",
       descKey: "email_desc"
     },
     {
