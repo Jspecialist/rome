@@ -47,15 +47,26 @@ export function ClientCodeModal({ isOpen, onClose }: ClientCodeModalProps) {
     }, 1000);
   };
 
-  const handleClose = () => {
+  const resetState = () => {
     setCode("");
     setError("");
     setIsVerified(false);
+  };
+
+  const handleClose = () => {
+    resetState();
     onClose();
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={handleClose}>
+    <Dialog
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!open) {
+          handleClose();
+        }
+      }}
+    >
       <DialogContent className="sm:max-w-[500px] bg-background border-accent/20">
         <button
           onClick={handleClose}

@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "npm run test:language-routing",
+    "test:language-routing": "node scripts/run-language-routing-tests.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.3.1",

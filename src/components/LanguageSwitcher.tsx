@@ -8,6 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { getLanguageRedirectPath } from '@/lib/languageRouting';
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
@@ -29,27 +30,10 @@ export function LanguageSwitcher() {
     // Navigate to the appropriate route
     if (typeof window !== 'undefined') {
       const currentPath = window.location.pathname;
-      const supportedPrefixes = ['es', 'it'];
-      const findPrefix = (path: string) => supportedPrefixes.find(p => path === `/${p}` || path.startsWith(`/${p}/`));
-      const currentPrefix = findPrefix(currentPath);
-      let newPath = currentPath;
+      const redirectPath = getLanguageRedirectPath(currentPath, languageCode);
 
-      if (languageCode === 'en') {
-        // Remove any language prefix for English
-        if (currentPrefix) {
-          newPath = currentPath.replace(`/${currentPrefix}`, '') || '/';
-        }
-      } else {
-        // Add or replace the prefix for the selected language
-        if (currentPrefix) {
-          newPath = currentPath.replace(`/${currentPrefix}`, `/${languageCode}`);
-        } else {
-          newPath = `/${languageCode}${currentPath === '/' ? '' : currentPath}`;
-        }
-      }
-
-      if (newPath !== currentPath) {
-        window.location.href = newPath;
+      if (redirectPath && redirectPath !== currentPath) {
+        window.location.href = redirectPath;
       }
     }
   };

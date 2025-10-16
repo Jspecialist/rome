@@ -1,10 +1,10 @@
 # Rome - Multilingual Legal Website
 
-> **Esquivel & Asociados** - Professional legal services website with complete English and Spanish support
+> **Esquivel & Asociados** - Professional legal services website with complete English, Spanish, and Italian support
 
 ## 🌟 Features
 
-- 🌍 **Multilingual Support**: Complete internationalization with English and Spanish
+- 🌍 **Multilingual Support**: Complete internationalization with English, Spanish, and Italian
 - 🎨 **Professional Design**: Modern, responsive design tailored for legal services
 - 🔄 **Language Switcher**: Seamless language switching with route-based URLs
 - 📱 **Mobile First**: Fully responsive across all devices
@@ -15,6 +15,7 @@
 
 - **English**: `/` - Main website in English
 - **Spanish**: `/es/` - Complete Spanish translation
+- **Italian**: `/it/` - Complete Italian translation
 
 ## 🛠️ Tech Stack
 
@@ -46,14 +47,18 @@
 │   │   ├── config.ts         # i18next configuration
 │   │   └── locales/
 │   │       ├── en.json       # English translations
-│   │       └── es.json       # Spanish translations
+│   │       ├── es.json       # Spanish translations
+│   │       └── it.json       # Italian translations
 │   ├── layouts/
 │   │   ├── Base.astro        # Base layout (English)
-│   │   └── BaseEs.astro      # Spanish base layout
+│   │   ├── BaseEs.astro      # Spanish base layout
+│   │   └── BaseIt.astro      # Italian base layout
 │   ├── pages/
 │   │   ├── index.astro       # Homepage (English)
-│   │   └── es/
-│   │       └── index.astro   # Homepage (Spanish)
+│   │   ├── es/
+│   │   │   └── index.astro   # Homepage (Spanish)
+│   │   └── it/
+│   │       └── index.astro   # Homepage (Italian)
 │   ├── scripts/
 │   │   └── init-i18n.ts      # i18n initialization
 │   └── styles/
@@ -79,7 +84,7 @@ All commands are run from the root of the project:
 This project uses **react-i18next** for complete multilingual support:
 
 - **Language Detection**: Automatically detects language from URL path
-- **Route-based URLs**: `/` for English, `/es/` for Spanish  
+- **Route-based URLs**: `/` for English, `/es/` for Spanish, `/it/` for Italian
 - **Persistent Language**: Selected language is saved in localStorage
 - **SEO Friendly**: Proper `lang` attributes and separate routes for each language
 
@@ -89,6 +94,7 @@ This project uses **react-i18next** for complete multilingual support:
 2. Add language to `src/i18n/config.ts`
 3. Update `LanguageSwitcher.tsx` to include new language
 4. Create route in `src/pages/{language}/`
+5. Add any language-specific layout in `src/layouts`
 
 ## 📄 Content Sections
 

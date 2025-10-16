@@ -5,7 +5,9 @@ const InfoSection = () => {
   return (
     <section className="py-12 bg-secondary/30">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary text-center mb-10">All business types at a glance</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary text-center mb-10">
+          All business types at a glance
+        </h2>
 
         {/* Small cards row */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto mb-10">
@@ -14,7 +16,9 @@ const InfoSection = () => {
               <Building2 className="h-5 w-5 text-accent" />
               <h3 className="font-semibold text-primary">Corporation (S.A)</h3>
             </div>
-            <p className="text-sm text-foreground/70">Issue shares, operate globally, and separate ownership from management.</p>
+            <p className="text-sm text-foreground/70">
+              Issue shares, operate globally, and separate ownership from management.
+            </p>
           </div>
           <div className="rounded-xl bg-white border shadow-soft p-5">
             <div className="flex items-center gap-3 mb-2">
@@ -28,7 +32,9 @@ const InfoSection = () => {
               <Users className="h-5 w-5 text-accent" />
               <h3 className="font-semibold text-primary">Private Interest Foundation</h3>
             </div>
-            <p className="text-sm text-foreground/70">Family wealth protection, succession planning, and confidential management.</p>
+            <p className="text-sm text-foreground/70">
+              Family wealth protection, succession planning, and confidential management.
+            </p>
           </div>
           <div className="rounded-xl bg-white border shadow-soft p-5">
             <div className="flex items-center gap-3 mb-2">
@@ -41,7 +47,7 @@ const InfoSection = () => {
 
         {/* Why choose us */}
         <div className="max-w-6xl mx-auto rounded-xl bg-white border shadow-soft p-6">
-          <h3 className="text-xl font-serif font-semibold text-primary mb-4 text-center">Why choose Esquiyaslaw to form your company?</h3>
+          <h3 className="text-xl font-serif font-semibold text-primary mb-4 text-center">Why choose Esquivel &amp; Asociados to form your company?</h3>
           <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm text-foreground/80">
             <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-accent mt-0.5" /> 20+ years of formation experience in Panama</li>
             <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-accent mt-0.5" /> Simplified, 100% online process</li>
