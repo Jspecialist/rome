@@ -1,13 +1,16 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { useState } from "react";
+import { Phone, Mail, MapPin, Clock, Lock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { ClientCodeModal } from "./ClientCodeModal";
 
 export function Contact() {
   const { t } = useTranslation();
+  const [showCodeModal, setShowCodeModal] = useState(false);
   
   const contactInfo = [
     {
@@ -177,21 +180,37 @@ export function Contact() {
               })}
             </div>
 
-            {/* Emergency Contact */}
-            <Card className="bg-accent/5 border-accent/20 shadow-soft">
-              <CardContent className="p-6">
-                <h4 className="font-semibold text-accent mb-2">{t('contact.emergency.title')}</h4>
-                <p className="text-sm text-foreground mb-3">
-                  {t('contact.emergency.description')}
-                </p>
-                <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-                  {t('contact.emergency.cta')}
-                </Button>
+            {/* Emergency Contact - VIP Access */}
+            <Card className="bg-gradient-to-br from-accent/10 to-accent/5 border-accent/30 shadow-medium hover:shadow-strong transition-all duration-300">
+              <CardContent className="p-6 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-accent/10 rounded-full blur-2xl" />
+                <div className="relative z-10">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Lock className="h-5 w-5 text-accent" />
+                    <h4 className="font-semibold text-accent">{t('contact.emergency.title')}</h4>
+                  </div>
+                  <p className="text-sm text-foreground mb-4">
+                    {t('contact.emergency.description')}
+                  </p>
+                  <Button 
+                    onClick={() => setShowCodeModal(true)}
+                    className="bg-accent hover:bg-accent/90 text-white shadow-soft hover:shadow-medium transition-all"
+                  >
+                    <Lock className="h-4 w-4 mr-2" />
+                    {t('contact.emergency.cta')}
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
         </div>
       </div>
+      
+      {/* Client Code Modal */}
+      <ClientCodeModal 
+        isOpen={showCodeModal}
+        onClose={() => setShowCodeModal(false)}
+      />
     </section>
   );
 }

@@ -92,8 +92,23 @@
     },
     "emergency": {
       "title": "Línea Legal de Emergencia 24/7",
-      "description": "Para asuntos legales urgentes que requieren atención inmediata",
-      "cta": "Llamar Línea de Emergencia: (555) 999-0000"
+      "description": "Acceso exclusivo para clientes VIP que requieren asistencia legal inmediata",
+      "cta": "Línea de Emergencia para Clientes",
+      "modal": {
+        "title": "Acceso Cliente VIP",
+        "description": "Ingrese su código de cliente exclusivo para acceder a la línea de emergencia 24/7",
+        "notice": "Este servicio está disponible exclusivamente para nuestros clientes premium. Su código privado fue proporcionado durante su consulta inicial.",
+        "code_label": "Código de Cliente Privado",
+        "code_placeholder": "Ingrese su código VIP",
+        "verify_button": "Verificar Acceso",
+        "verifying": "Verificando...",
+        "error": "Código inválido. Por favor contacte a su abogado para asistencia.",
+        "success_title": "Acceso Concedido",
+        "success_description": "Su estatus VIP ha sido verificado. Ahora tiene acceso a nuestra línea de emergencia exclusiva.",
+        "available_24_7": "Disponible 24/7 para asuntos legales urgentes",
+        "call_now": "Llamar Ahora",
+        "close": "Cerrar"
+      }
     }
   },
   "visa": {
